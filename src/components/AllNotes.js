@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 import { toggleNote, SHOW_ACTIVE, SHOW_COMPLETED } from "../store";
 
 const AllNotes = (props) => (
-  <div className="allNotes">
-    <ul>
+  <div className="notesContainer">
+    <ul className="notes">
       {props.notes.map((note) => (
         <Note
           key={note.id}

@@ -9,10 +9,16 @@ import {
 
 const Footer = ({ toggleView }) => (
   <div className="footer">
-    <span>Show:</span>
-    <button onClick={() => toggleView(SHOW_ALL)}>All</button>
-    <button onClick={() => toggleView(SHOW_ACTIVE)}>Active</button>
-    <button onClick={() => toggleView(SHOW_COMPLETED)}>Completed</button>
+    <span>Show: </span>
+    <button className="footButton" onClick={() => toggleView(SHOW_ALL)}>
+      All
+    </button>
+    <button className="footButton" onClick={() => toggleView(SHOW_ACTIVE)}>
+      Active
+    </button>
+    <button className="footButton" onClick={() => toggleView(SHOW_COMPLETED)}>
+      Completed
+    </button>
   </div>
 );
 
